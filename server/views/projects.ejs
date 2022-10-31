@@ -1,0 +1,74 @@
+<!--
+File: project.ejs
+Student Name: Manvibolreach Ouk
+Student ID: 301224112
+Date: October 31, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel=' stylesheet ' href='/Content/about.css' />
+
+</head>
+<body>
+<%- include partials/main_nav.ejs %>
+<!-- Main Content -->
+<main class="container">
+  
+    <div class="col-md-12 text-center">
+        <h3 class="animate-charcter"> Welcome to the <%= title %> page</h3>
+      </div> 
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/Assets/images/project1.png"alt="Project Picture 3" height="220px" >
+            <p>Winter Web Application</p>
+            <a class="button" href="https://github.com/manvibolreachouk/Winter-Semester_Websites_/tree/master/Home%20Page">Demo</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="/Assets/images/project2.png" alt="Project Picture 3" height="220px">
+            <p>Input Account</p>
+            <a class="button" href="https://github.com/manvibolreachouk/AccountApp/tree/master/AccountsApp">Demo</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="/Assets/images/project3.png" alt="Project Picture 3" height="220px">
+            <p>Photo Slideshow </p>
+            <a class="button" href="https://github.com/manvibolreachouk/Your-Favorite-Food/tree/master/Your%20Favorite%20Food">Demo</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="/Assets/images/project4.png" alt="Project Picture 3" height="220px">
+            <p>Coffee Ordering</p>
+            <a class="button" href="https://github.com/manvibolreachouk/Coffee-Ordering-Database-Project">Demo</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="/Assets/images/project5.png"alt="Project Picture 3" height="220px" >
+            <p>Graphical Password</p>
+            <a class="button" href="https://github.com/manvibolreachouk/Graphical-Password-Project">Demo</a>
+          </div>
+      </div>
+      <div class="column">
+        <a class="btn btn-primary" style="background-color: #0051ff;" href="https://www.linkedin.com/in/vibolreach/" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/manvibolreachouk" role="button"><i class="fab fa-github"></i></a>
+      </div>
+  
+</main>
+
+<%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>

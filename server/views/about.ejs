@@ -1,0 +1,56 @@
+<!--
+File: about.ejs
+Student Name: Manvibolreach Ouk
+Student ID: 301224112
+Date: October 01, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel=' stylesheet ' href='/Content/about.css' />
+
+</head>
+<body>
+<%- include partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container">
+  
+    <div class="profile">
+        <img src="/Assets/images/profile.jpg" class="rounded float-end" alt="..." width="400px"; height="400px">
+    </div>
+    <div class="text">
+        <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> Welcome to the <%= title %> page</h3>
+        </div>    
+          
+        <p> My name is Manvibolreach Ouk.</p>
+        <p> I am a Software Engineering Technician student at Centennial College. I am currently in second year.</p>
+        <p> I am working as a Full-Stack Developer in North York, Ontaio. I have learned a lot from this job.</p>
+        <li>Collaboartion</li>
+        <li>New Technology</li>
+        <li>I like coding but I am into back-end more</li>
+        <p></p>
+        <p>I know the future is a new journey that we can not forecast. However, I usually plan for my future on how to catch up with my dream and make it comes true. If the dream will not happen, keep improving on my weaknesses.
+        </p>
+        <h1></h1>
+        <h1></h1>
+        <a class="btn btn-primary" href="/Assets/images/Manvibolreach Ouk Resume.pdf">Resume</a>   
+    </div>
+    <p></p>
+    <a class="btn btn-primary" style="background-color: #0051ff;" href="https://www.linkedin.com/in/vibolreach/" role="button"><i class="fab fa-linkedin-in"></i></a>
+    <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/manvibolreachouk" role="button"><i class="fab fa-github"></i></a>
+   
+</main>
+
+<%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>

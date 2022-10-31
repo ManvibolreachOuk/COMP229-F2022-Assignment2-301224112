@@ -1,0 +1,129 @@
+/*
+File: service.css
+Student Name: Manvibolreach Ouk
+Student ID: 301224112
+Date: October 01, 2022
+*/ 
+
+body{
+    background-image: url("/Assets/images/background.jpg");
+    color:#000000;
+    
+}
+nav .navbar-nav li a{
+    color: white !important;
+}
+
+.text{
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    left: 2%;
+    right: 100px;
+    text-align: center;
+} 
+/*
+css that load color from right to left in exact time
+*/
+.animate-charcter
+{
+text-transform: uppercase;
+background-image: linear-gradient(
+-225deg,
+#231557 0%,
+#44107a 29%,
+#ff1361 67%,
+#00ffff 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+font-size: 40px;
+}
+/*
+using keyframes for animation 
+*/
+@keyframes textclip {
+to {
+background-position: 200% center;
+}
+}
+footer {
+    position: relative;
+    height: 70px;
+    width: 100%;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}
+main{
+    height: 100%;
+    border-radius: 6px;
+    width: 50%;
+    
+    margin-top: 2%;
+}
+
+.wrapper{ 
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+input {
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 1.16rem;
+    padding: 0.2rem;
+    transition: border-color 0.5s ease-out;
+    margin-left: 0%;
+}
+input:optional {
+    border-color: gray;
+}
+
+input:required:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 235px;
+    text-align: left;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #0f89e0;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*
+Some of the codes were taken from my old assignments from previous semester
+*/

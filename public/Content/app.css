@@ -1,0 +1,119 @@
+/*
+File: app.css
+Student Name: Manvibolreach Ouk
+Student ID: 301224112
+Date: October 31, 2022
+*/ 
+
+body {
+    background-color: rgb(28, 28, 28);
+    background-position:
+      top 0px left 0px,
+      bottom 0px right 0px;
+    position: relative;
+    height: 100vh;
+    color: aliceblue;
+    margin: auto;
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  nav .navbar-nav li a{
+    color: white !important;
+    }
+  .textAlign{ 
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    left: 2%;
+    right: 0%;
+    text-align: center;
+  
+  }
+  .text-wave {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  }
+  /*
+  css for wave animation on the letters with eaxct time period
+  */
+  .text-wave span {
+      position: relative;
+      color: rgb(255, 255, 255);
+      font-size: 40px;
+      font-family: monospace;
+      animation: wave 3s ease-in-out infinite;
+      animation-delay: calc(.1s*var(--i));
+    }
+  
+  @keyframes wave {
+      0% {
+        transform: translateY(0px);
+      }
+  
+      20% {
+        transform: translateY(-24px);
+      }
+  
+      40%,
+      100% {
+        transform: translateY(0);
+      }
+  }
+  /*
+  color slide from side to side that is over background color and pictures
+  */
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(28, 28, 28) 50%, rgb(101, 101, 102) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:10s;
+  }
+  
+  .bg3 {
+    animation-duration:10s;
+  }
+  main{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  footer {
+    position: relative;
+    height:240px;
+    width: 100%;
+    margin-bottom: 0%;
+  
+  }
+  
+  p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+  }
+  /*
+  Some of the codes were taken from my old assignments from previous semester
+  */

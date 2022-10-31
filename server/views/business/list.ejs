@@ -1,0 +1,64 @@
+<!--
+File: list.ejs
+Student Name: Manvibolreach Ouk
+Student ID: 301224112
+Date: October 01, 2022
+-->
+
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container">
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+      <h1><%=title %></h1>
+      <% if(typeof displayName == 'string' && displayName) { %>
+
+      <a href="/business-list/add" class="btn btn-primary" role="button">
+      <i class ="fas fa-plus-circle"></i> Add a business
+   <%}%>
+      </a>
+      <br>
+
+      <br/>
+      <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <!--HEader row-->
+        <thead>
+        <tr>
+          <th class="text-center text-light">Contact Name</th>
+          <th class="text-center text-light">Contact Number</th>
+          <th class="text-center text-light">Contact Email</th>
+          <% if(typeof displayName == 'string' && displayName) { %>
+
+          <th class="text-center"></th>
+          <th class="text-center"></th>
+          <%}%>
+        </tr>
+      </thead>
+        <!--Repetable Templet row-->
+        <% for (let count=0; count<BusinessList.length; count++){%>
+          <tr>
+            <td class="text-centre text-light"><%=BusinessList[count].name %></td>
+            <td class="text-centre text-light"><%=BusinessList[count].number %></td>
+            <td class="text-centre text-light"><%=BusinessList[count].email %></td>
+            
+            <% if(typeof displayName == 'string' && displayName) { %>
+            <td class="text-center col-1">
+              <a href="/business-list/edit/<%= BusinessList[count]._id %>" class="btn btn-primary btn-sm">
+              <i class="fas fa-pencil-alt"></i> Edit</a>
+          </td>
+          <td class="text-center col-1">
+              <a href="/business-list/delete/<%= BusinessList[count]._id %>" class="btn btn-danger btn-sm">
+              <i class="fas fa-trash-alt"></i> Delete</a>
+          </td>
+          <%}%>
+          </tr>
+        <%}%>
+      </table>
+    </div>
+  </div>
+  </div>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>

@@ -1,0 +1,67 @@
+<!--
+File: contact.ejs
+Student Name: Manvibolreach Ouk
+Student ID: 301224112
+Date: October 01, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel=' stylesheet ' href='/Content/service.css' />
+
+</head>
+<body>
+<%- include partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container">
+ 
+    
+    <div class="wrapper">
+        <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> Welcome to the <%= title %> page</h3>
+        </div>
+        <form action="/home" class="form" method="new page">
+            <label id="fname">Enter First Name:
+                <input type="text" name="fname" placeholder="First name" required/>
+            </label>
+
+            <label id="lname">Enter Last Name:
+                <input type="text" name="lname" placeholder="Last name" required/>
+            </label><br/> <br/>
+
+            <label id="phone">Enter Phone Number:
+                <input type="tel" name="phone" placeholder="Phone number" required/>
+            </label><br/> <br/>
+            <label id="email">Enter Email Address:
+                <input type="text" name="email" placeholder="Email Adress" required/>
+            </label><br/> <br/>
+
+            <label id="message">Enter message:
+                <input type="text" name="message" row="5" placeholder="Message" required/>
+            </label><br/> <br/>
+
+            <input type="submit" value="submit" name="submit" class="btn">
+       </form>
+       <a class="nav-link active" aria-current="page" href="mailto:vibolreach.m.ouk@gmail.com"> Email: vibolreach.m.ouk@gmail.com </a>
+       <a class="nav-link active" aria-current="page" href="#"> Phone Number: (437)-688-3818 </a>
+       <p></p>
+       <a class="btn btn-primary" style="background-color: #0051ff;" href="https://www.linkedin.com/in/vibolreach/" role="button"><i class="fab fa-linkedin-in"></i></a>
+       <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/manvibolreachouk" role="button"><i class="fab fa-github"></i></a>
+    </div>
+    
+    </form>
+  </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>
